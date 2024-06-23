@@ -1,0 +1,29 @@
+:root {
+    --color-dark: #00B090;
+    --color-light: #D3FEE0;
+    --input-width: 200px;
+    --input-height: 50px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+        to top right,
+        var(--color-dark),
+        var(--color-light)
+    );
+}
+
+input {
+    border-radius: 7px;
+    border-color: white;
+    width: var(--input-width) * 1.3;
+    height: var(--input-height) * 1.3;
+}
+
+input:hover,
+input:focus {
+    width: var(--input-width);
+    height: var(--input-height);
+}
